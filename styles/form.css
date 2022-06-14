@@ -1,0 +1,29 @@
+#form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    text-align: center;
+    margin: auto;
+}
+
+#form #input_senha {
+    margin-top: 20px;
+}
+
+#form .olhos {
+    position: absolute;
+    top: 37%;
+    left: 102%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#form #olho_aberto {
+    display: block;
+}
+
+#form #olho_fechado {
+    display: none;
+}

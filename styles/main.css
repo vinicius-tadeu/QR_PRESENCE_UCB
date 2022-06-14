@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    border-radius: 10px;
+    margin: 10% 30%;
+    background: linear-gradient(45deg, rgb(10, 0, 192) 0%, rgb(62, 62, 234) 35%, rgb(0, 178, 214) 100%);
+    box-shadow: 1px 1px 10px rgb(0, 0, 151);
+    overflow: hidden;
+}
+
+#main #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main #container #hTitle {
+    color: white
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(225deg, rgb(10, 0, 192) 0%, rgb(62, 62, 234) 35%, rgb(0, 178, 214) 100%);
+}
+
+#main .inputTxt {
+    margin: 10px 0;
+    outline: none;
+    height: 30px;
+    border: 1px gainsboro solid;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#main .inputBtn {
+    background-color: cadetblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    box-shadow: rgb(0, 49, 104) 0 0 10px;
+    cursor: pointer;
+    transition: transform .4s;
+    width: 100%;
+}
+
+#main .inputBtn:active {
+    background-color: rgb(82, 142, 145);
+}
+
+#main .inputBtn:hover {
+    transform: scale(108%);
+}
+
+#main .inputBtnR {
+    display: flex;
+    background-color: cadetblue;
+    color: white;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+#main .inputBtnR:active {
+    background-color: rgb(82, 142, 145)
+}
+
+#main .btnLink {
+    width: max-content;
+    color: white;
+    margin: auto;
+}
+
+#main #logoQR {
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 50%;
+    border: 3px white solid;
+    z-index: 9;
+}
+
+#main #logo-qrcode {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (max-height:650px) {
+    #main {
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #main {
+        margin: 0;
+        border-radius: 0;
+    }
+    #main #form {
+        width: 50vw;
+    }
+    @media screen and (min-width:900px) {
+        #main {
+            margin: 0 30%;
+        }
+        #main #form {
+            width: 30vw;
+        }
+        #form-restore {
+            margin: 0 20%;
+        }
+    }
+}

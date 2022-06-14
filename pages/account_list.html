@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../styles/main-footer.css">
+    <link rel="stylesheet" href="../styles/main-account.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/confirm-card.css">
+    <title>QR Presence</title>
+</head>
+
+<body>
+    <div id="card-blur">
+        <header id="main-header">
+            <nav id="main-nav">
+                <a id="user_menu" href="#" onclick="openMenu()">
+                    <img id="user_image" src="../img/user.png" alt="Ícone do Usuário">
+                </a>
+                <a class="main-a" href="account.html">Gerar QR CODE</a>
+                <a class="main-a" href="account_historic.html">Histórico</a>
+                <a class="main-a" href="account_manual.html">Presença Manual</a>
+                <a class="main-a" href="account_list.html">Lista de Alunos</a>
+            </nav>
+        </header>
+        <button id="user_menu" onclick="openMenu()">
+        <img id="user_image" src="../img/user.png" alt="Ícone do Usuário">
+        </button>
+        <nav id="menu-extension">
+            <a>
+                <input class="menu-exit" type="button" value="Perfil" style="margin-top: 0;" onclick="openCardPerfil()">
+            </a>
+            <a>
+                <input class="menu-exit" type="button" value="Alterar Senha">
+            </a>
+            <a href="index.html">
+                <input class="menu-exit" type="button" value="Sair">
+            </a>
+        </nav>
+        <div id="container-account-historic">
+            <main id="account-historic">
+                <div id="container-table">
+                    <table border="2" id="historic-table">
+                        <thead id="table-title">
+                            <tr>
+                                <td class="style-border">Aluno</td>
+                                <td class="style-border">Matrícula</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="style-border">Aluno1</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                            <tr>
+                                <td class="style-border">Aluno2</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                            <tr>
+                                <td class="style-border">Aluno3</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                            <tr>
+                                <td class="style-border">Aluno4</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                            <tr>
+                                <td class="style-border">Aluno5</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                            <tr>
+                                <td class="style-border">Aluno6</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                            <tr>
+                                <td class="style-border">Aluno7</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                            <tr>
+                                <td class="style-border">Aluno8</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                            <tr>
+                                <td class="style-border">Aluno9</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                            <tr>
+                                <td class="style-border">Aluno10</td>
+                                <td class="style-border">000000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div id="card-wrapper">
+        <article id="card-menu">
+            <figure id="card-exit-container">
+                <a id="exit-link" onclick="closeCardPerfil()">
+                    <img id="card-exit" src="../img/marca-x.png" alt="Fechar">
+                </a>
+            </figure>
+            <figure id="card-figure">
+                <img id="card-image" src="../img/user.png" alt="Foto de perfil do Professor">
+            </figure>
+            <h1 id="card-title">Informações</h1>
+            <div id="card-info" style="margin-bottom: 5%;">
+                <label for="nome">Nome:</label>
+                <h2 id="nome">XXXXX</h2>
+                <a>
+                    <img id="card-edit1" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditNome()">
+                </a>
+                <label for="disciplina">Disciplina:</label>
+                <h2 id="disciplina">XXXXX</h2>
+                <a>
+                    <img id="card-edit2" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditDisciplina()">
+                </a>
+                <label for="telefone">Telefone:</label>
+                <h2 id="telefone">XXXXX</h2>
+                <a>
+                    <img id="card-edit3" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditTelefone()">
+                </a>
+                <label for="cpf">CPF:</label>
+                <h2 id="cpf">XXXXX</h2>
+                <a>
+                    <img id="card-edit4" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditCPF()">
+                </a>
+                <label for="email">E-mail:</label>
+                <h2 id="email">XXXXX</h2>
+                <a>
+                    <img id="card-edit5" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditEmail()">
+                </a>
+                <label for="turnos">Turno(s):</label>
+                <h2 id="turnos">XXXXX</h2>
+                <a>
+                    <img id="card-edit6" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditTurnos()">
+                </a>
+            </div>
+            <input style="width: 60%; margin: 0 auto;position: sticky;top: 92%;left: 20%;" class="menu-exit" type="button" value="Salvar" onclick="openConfirmSave()">
+        </article>
+        <div id="cardConfirm">
+            <h2 id="cardConfirmTitle">Deseja mesmo alterar suas informações?</h2>
+            <div id="cardConfirmBtnContainer">
+                <button class="cardConfirmBtn" onclick="closeConfirmSave()">Cancelar</button>
+                <button class="cardConfirmBtn" onclick="confirmSave()">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/user_menu.js"></script>
+    <script src="../js/user_card.js"></script>
+    <script src="../js/card-edit.js"></script>
+</body>
+
+</html>

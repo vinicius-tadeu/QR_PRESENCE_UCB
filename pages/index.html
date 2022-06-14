@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../styles/main-footer.css">
+    <title>QR Presence</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <main id="main">
+            <div id="container">
+                <h1 id="hTitle">QR PRESENCE</h1>
+
+                <figure id="logoQR">
+                    <img id="logo-qrcode" width="150px" height="150px" src="../img/qr-code.svg" alt="Logo QR PRESENCE">
+                </figure>
+                <form id="form">
+                    <input class="inputTxt" type="text" placeholder="Matrícula">
+                    <input id="input_senha" class="inputTxt" type="password" placeholder="Senha">
+                    <a href="account.html">
+
+                        <input class="inputBtn" type="button" value="Entrar">
+                    </a>
+                    <img onclick="olhoAberto()" class="olhos" id="olho_aberto" src="../img/visible.png" alt="Imagem para visualizar a senha digitada">
+                    <img onclick="olhoFechado()" class="olhos" id="olho_fechado" src="../img/invisible.png" alt="Imagem para esconder a senha digitada">
+                    <a class="btnLink" href="recuperar_senha.html" style="text-align:left;">Recuperar senha</a>
+
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

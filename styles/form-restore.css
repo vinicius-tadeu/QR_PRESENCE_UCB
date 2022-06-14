@@ -1,0 +1,29 @@
+#form-restore {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0 27%;
+    min-width: 160px;
+}
+
+#form-restore #arrow-left {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 100%;
+    left: 43%;
+    cursor: pointer;
+}
+
+#form-restore #SMS {
+    text-decoration: none;
+    width: 160px;
+}
+
+#form-restore #EMAIL {
+    text-decoration: none;
+    width: 160px;
+}

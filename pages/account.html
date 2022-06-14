@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../styles/main-account.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/confirm-card.css">
+    <link rel="stylesheet" href="../styles/change-card.css">
+    <title>QR Presence</title>
+</head>
+
+
+<body>
+    <div id="card-blur">
+        <header id="main-header">
+            <nav id="main-nav">
+                <a class="main-a" href="account.html">Gerar QR CODE</a>
+                <a class="main-a" href="account_historic.html">Histórico</a>
+                <a class="main-a" href="account_manual.html">Presença Manual</a>
+                <a class="main-a" href="account_list.html">Lista de Alunos</a>
+            </nav>
+        </header>
+        <button id="user_menu" onclick="openMenu()">
+            <img id="user_image" src="../img/user.png" alt="Ícone do Usuário">
+        </button>
+        <nav id="menu-extension">
+            <a>
+                <input class="menu-exit" type="button" value="Perfil" style="margin-top: 0;" onclick="openCardPerfil()">
+            </a>
+            <a>
+                <input class="menu-exit" type="button" value="Alterar Senha" onclick="openChangePassword()">
+            </a>
+            <a href="index.html">
+                <input class="menu-exit" type="button" value="Sair">
+            </a>
+        </nav>
+
+
+        <div id="main-container-account">
+            <div id="main-account-shadow"></div>
+            <main id="main-account">
+                <div id="container">
+                    <h1 id="hTitle">Gerar QR CODE</h1>
+                    <figure id="logoQR">
+                        <img id="logo-qrcode" width="150px" height="150px" src="../img/qr-code.svg" alt="Logo QR PRESENCE">
+                    </figure>
+                    <input style="width: 60%;" class="menu-exit" type="button" value="Gerar">
+                </div>
+            </main>
+        </div>
+    </div>
+    <div id="card-wrapper">
+
+        <article id="card-menu">
+            <figure id="card-exit-container">
+                <a id="exit-link" onclick="closeCardPerfil()">
+                    <img id="card-exit" src="../img/marca-x.png" alt="Fechar">
+                </a>
+            </figure>
+            <figure id="card-figure">
+                <img id="card-image" src="../img/user.png" alt="Foto de perfil do Professor">
+            </figure>
+            <h1 id="card-title">Informações</h1>
+            <div id="card-info" style="margin-bottom: 5%;">
+                <label for="nome">Nome:</label>
+                <h2 id="nome">XXXXX</h2>
+                <a>
+                    <img id="card-edit1" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditNome()">
+                </a>
+                <label for="disciplina">Disciplina:</label>
+                <h2 id="disciplina">XXXXX</h2>
+                <a>
+                    <img id="card-edit2" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditDisciplina()">
+                </a>
+                <label for="telefone">Telefone:</label>
+                <h2 id="telefone">XXXXX</h2>
+                <a>
+                    <img id="card-edit3" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditTelefone()">
+                </a>
+                <label for="cpf">CPF:</label>
+                <h2 id="cpf">XXXXX</h2>
+                <a>
+                    <img id="card-edit4" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditCPF()">
+                </a>
+                <label for="email">E-mail:</label>
+                <h2 id="email">XXXXX</h2>
+                <a>
+                    <img id="card-edit5" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditEmail()">
+                </a>
+                <label for="turnos">Turno(s):</label>
+                <h2 id="turnos">XXXXX</h2>
+                <a>
+                    <img id="card-edit6" class="card-edit" src="../img/escrever.png" alt="Editar" onclick="cardEditTurnos()">
+                </a>
+            </div>
+            <input style="width: 60%; margin: 0 auto;position: sticky;top: 92%;left: 20%;" class="menu-exit" type="button" value="Salvar" onclick="openConfirmSave()">
+        </article>
+        <div id="cardConfirm">
+            <h2 id="cardConfirmTitle">Deseja mesmo alterar suas informações?</h2>
+            <div id="cardConfirmBtnContainer">
+                <button class="cardConfirmBtn" onclick="closeConfirmSave()">Cancelar</button>
+                <button class="cardConfirmBtn" onclick="confirmSave()">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <div id="change-card">
+        <figure id="card-exit-container">
+            <a id="exit-link" onclick="closeChangePassword()">
+                <img id="card-exit" src="../img/marca-x.png" alt="Fechar">
+            </a>
+        </figure>
+        <h2 style="font-size: 24px; display:block;text-align:center;">Alterar Senha</h2>
+        <h2 id="cardChangeTitle" style="color: black;font-size: 20px;">Digite o código que enviamos em seu email:</h2>
+        <input id="cardChangeInput" type="text">
+        <button id="cardChangeBtn" class="cardConfirmBtn">Confirmar</button>
+    </div>
+    <script src="../js/user_menu.js"></script>
+    <script src="../js/user_card.js"></script>
+    <script src="../js/card-edit.js"></script>
+    <script src="../js/change_card.js"></script>
+</body>
+
+</html>
